@@ -1,34 +1,29 @@
-# 💰 Personal Expense Tracker
+# Personal Expense Tracker
 
-A menu-driven, terminal-based expense tracker written in **C**.
+A simple **C-based Personal Expense Tracker** that helps users manage their daily spending through a terminal. It allows users to record expenses, track their monthly budget, and view spending reports. All data is saved in files, so records remain available after closing the program.
 
 ## Features
-- Admin login, logout, add new admin, forgot username/password
-- Add, view, search, update and delete expenses
-- Add and delete categories
-- Monthly budget with a warning when it is crossed
-- Summary report with category-wise spending
-- Data saved in files, with input validation
+- Add, view, search, update, and delete expenses.
+- Search expenses by ID, date, or category.
+- Set a monthly budget and receive spending warnings.
+- Generate expense summaries by category.
+- Add and manage expense categories.
+- Admin login, registration, and password recovery.
+- Save and load data using file handling.
 
-## How to Run
-```bash
-gcc -Wall -Wextra -o expense_tracker *.c
-./expense_tracker
-```
-On Windows, run `expense_tracker.exe`.
+How to Run
 
-On the first run, choose **2. Register Admin** to create the first admin, then **1. Login**.
+Compile the project using GCC: gcc -Wall -Wextra -o expense_tracker *.c
 
-## Files
-| File | Purpose |
-|---|---|
-| `main.c` | Main menu and program flow |
-| `auth.c` | Login, register, password recovery |
-| `expense.c` | Expense add, view, search, update, delete |
-| `category.c` | Category management |
-| `report.c` | Summary report and budget |
-| `input.c` / `storage.c` | Safe input and file saving |
-| `expense.h` | Structures and function list |
+On Windows, run: .\expense_tracker.exe
+
+On Linux, run: ./expense_tracker
+
+Register an admin account, log in, and start managing your expenses.
+
+
+## Technologies Used
+C Programming, Structures, Functions, File Handling, and Modular Programming.
 
 ## Note
-This is a beginner learning project built to practice C programming: structures, file handling, modular code and input validation. Passwords are hashed with a simple method, so it is not meant for real-world security.
+This project was created for learning and practising C programming. Its basic password-hashing method is not suitable for real-world security.
